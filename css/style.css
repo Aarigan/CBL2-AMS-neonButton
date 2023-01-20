@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+:root {
+  --clr-bkg: #0e142c;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--clr-bkg);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.563em;
+}
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.125em 2.188em;
+  border: none;
+  outline: none;
+  background: var(--clr-bkg);
+  color:#f0f0f0e3;
+  font-size: 2.125em;
+  font-weight: 500;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  border-radius: 22px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* button 1 */
+.button1{
+  box-shadow: 0 0 10vw 0vw #01e3ef,
+    0 0 2vw 0.4vw #01b9c2,
+    inset 0 0 .5vw .2vw #01e3ef,
+    inset 0 0 .5vw .2vw #01b9c2,
+    inset 0 0 .5vw .2vw #09747a;
+  text-shadow:
+    .1vw 0vw .25vw #01e3ef,
+    .15vw 0vw .25vw #01e3ef,
+
+    .1vw 0vw .1vw #01b9c2,
+    .15vw 0vw .1vw #01b9c2,
+    .4vw 0vw .1vw #01b9c2,
+
+    .1vw 0vw 2vw #01b9c2,
+    .15vw 0vw 2vw #01b9c2,
+    .4vw 0vw 2vw #01b9c2,
+
+    .1vw 0vw 1vw #09747a,
+    .15vw 0vw 1vw #09747a,
+    .4vw 0vw 5vw #09747a,
+
+    .1vw 0vw 5vw #09747a,
+    .15vw 0vw 20vw #09747a,
+    .4vw 0vw 10vw #09747a,
+
+    .1vw 0vw 10vw #09747a,
+    .15vw 0vw 30vw #09747a,
+    .4vw 0vw 10vw #09747a;
+  animation: blinkBtn1 2s infinite alternate; 
+}
+
+@keyframes blinkBtn1 {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    box-shadow: 0 0 10vw 0vw #01e3ef,
+      0 0 2vw 0.4vw #01b9c2,
+      inset 0 0 .5vw .2vw #01e3ef,
+      inset 0 0 .5vw .2vw #01b9c2,
+      inset 0 0 .5vw .2vw #09747a;
+    text-shadow:
+      .1vw 0vw .25vw #01e3ef,
+      .15vw 0vw .25vw #01e3ef,
+
+      .1vw 0vw .1vw #01b9c2,
+      .15vw 0vw .1vw #01b9c2,
+      .4vw 0vw .1vw #01b9c2,
+
+      .1vw 0vw 2vw #01b9c2,
+      .15vw 0vw 2vw #01b9c2,
+      .4vw 0vw 2vw #01b9c2,
+
+      .1vw 0vw 1vw #09747a,
+      .15vw 0vw 1vw #09747a,
+      .4vw 0vw 5vw #09747a,
+
+      .1vw 0vw 5vw #09747a,
+      .15vw 0vw 20vw #09747a,
+      .4vw 0vw 10vw #09747a,
+
+      .1vw 0vw 10vw #09747a,
+      .15vw 0vw 30vw #09747a,
+      .4vw 0vw 10vw #09747a;
+  }
+  20%,
+  24%,
+  55% {
+    box-shadow: none;
+    text-shadow: none;
+  }
+}
+/* button 2 */
+.button2 {
+  box-shadow: 0 0 10vw 0vw #fc8585,
+    0 0 2vw 0.4vw #e64d4d,
+    inset 0 0 .5vw .2vw #fc8585,
+    inset 0 0 .5vw .2vw #e64d4d,
+    inset 0 0 .5vw .2vw #ac0101;
+  text-shadow:
+    .1vw 0vw .25vw #fc8585,
+    .15vw 0vw .25vw #fc8585,
+
+    .1vw 0vw .1vw #e64d4d,
+    .15vw 0vw .1vw #e64d4d,
+    .4vw 0vw .1vw #e64d4d,
+
+    .1vw 0vw 2vw #e64d4d,
+    .15vw 0vw 2vw #e64d4d,
+    .4vw 0vw 2vw #e64d4d,
+
+    .1vw 0vw 1vw #ac0101,
+    .15vw 0vw 1vw #ac0101,
+    .4vw 0vw 5vw #ac0101,
+
+    .1vw 0vw 5vw #ac0101,
+    .15vw 0vw 20vw #ac0101,
+    .4vw 0vw 10vw #ac0101,
+
+    .1vw 0vw 10vw #ac0101,
+    .15vw 0vw 30vw #ac0101,
+    .4vw 0vw 10vw #ac0101;
+  animation: blinkBtn2 2s infinite alternate;
+}
+
+@keyframes blinkBtn2 {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    box-shadow: 0 0 10vw 0vw #fc8585,
+        0 0 2vw 0.4vw #e64d4d,
+        inset 0 0 .5vw .2vw #fc8585,
+        inset 0 0 .5vw .2vw #e64d4d,
+        inset 0 0 .5vw .2vw #ac0101;
+    text-shadow:
+        .1vw 0vw .25vw #fc8585,
+        .15vw 0vw .25vw #fc8585,
+    
+        .1vw 0vw .1vw #e64d4d,
+        .15vw 0vw .1vw #e64d4d,
+        .4vw 0vw .1vw #e64d4d,
+    
+        .1vw 0vw 2vw #e64d4d,
+        .15vw 0vw 2vw #e64d4d,
+        .4vw 0vw 2vw #e64d4d,
+    
+        .1vw 0vw 1vw #ac0101,
+        .15vw 0vw 1vw #ac0101,
+        .4vw 0vw 5vw #ac0101,
+    
+        .1vw 0vw 5vw #ac0101,
+        .15vw 0vw 20vw #ac0101,
+        .4vw 0vw 10vw #ac0101,
+    
+        .1vw 0vw 10vw #ac0101,
+        .15vw 0vw 30vw #ac0101,
+        .4vw 0vw 10vw #ac0101;
+  }
+  21%,
+  24%,
+  65% {
+    box-shadow: none;
+    text-shadow: none;
+  }
+}
+
+.button1:hover,
+.button2:hover {
+    transform: scale(1.2);
+}
